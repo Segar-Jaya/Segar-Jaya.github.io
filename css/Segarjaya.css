@@ -1,0 +1,642 @@
+*{
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: rgb(230, 29, 43);
+  --bg-color: #eee;
+  --text-color: #1b1b1b;
+  --box-shadow: 1px 1px 5px 2px rgba(14, 55, 44, 0.3);
+}
+
+img{
+  width: 100%;
+}
+
+body{
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+/* Nav Bar */
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: space-between;
+  transition: top 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left .back-button {
+  font-size: 24px;
+  margin-right: 20px;
+  color: var(--text-color);
+}
+
+.navbar .navbar-logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--text-color);
+  padding-left: 30px;
+}
+
+.navbar .navbar-nav a {
+  color: var(--text-color);
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 550;
+  margin: 0 1rem;
+  margin-right: 5px;
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.25rem;
+  border-bottom: 0.25rem solid var(--text-color);
+  transform: scaleX(0);
+  transition: 0.1s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar .navbar-extra a {
+  color: var(--text-color);
+  margin: 0 0.5rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar .fas {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* -----HERO SECTION----- */
+
+.hero{
+  min-height: 100vh;
+  margin-top: 8%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  align-items: center;
+  background-image: url('../gambar/Segar\ Jaya_Front.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px; /* Mengatur border-radius untuk membulatkan ujungnya */
+}
+
+ .hero .content h1{
+  font-size: 5em;
+  font-weight: 600;
+  color: #eee;
+  font-family: Poppins;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  line-height: 1.25;
+}
+
+.hero .content{
+  padding: 1.4rem 7%;
+  max-width: 60px;
+}
+
+/* Product Section */
+
+.heading{
+  text-align:left;
+  padding: 90px 50px 0 50px;
+}
+
+.heading h2{
+  font-size: 2.8em;
+}
+
+.bordered-h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.bordered-h2::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 20%;
+  border-bottom: 3px solid black;
+}
+
+.products-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 1.9rem;
+  margin-top: 2rem;
+  margin: 60px;
+}
+
+.products-container .box{
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.products-container img{
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+  padding: 20px;
+  background: #dedddd;
+  border-radius: 0.5rem;
+}
+
+.products-container .box h3{
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+.products-container .box .content p{
+  padding: 0;
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 450;
+}
+
+.products-container .box .content a{
+  padding: 0 0.5rem;
+  color: var(--bg-color);
+  background: var(--primary-color);
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.selengkapnya{
+  position: absolute;
+  right: 60px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.selengkapnya h3 {
+  margin: 0;
+}
+
+.selengkapnya a {
+  text-decoration: none;
+  color: black; 
+  font-weight: bold;
+}
+
+.selengkapnya:hover{
+  transform: scale(1.1);
+}
+
+/* About Section */
+.about{
+  padding: 90px 50px 0 50px;
+}
+
+.about h2{
+  font-size: 2.8em;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.about .row{
+  display: flex;
+}
+
+.about .row .about-img{
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img{
+  width: 535px;
+  height: 450px;
+  margin-right: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about .row .content{
+  flex: 1 1 60rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3{
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.about .row .content p{
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+
+/* Contact Section */
+.contact{
+  text-align:left;
+  padding: 90px 50px 0 50px;
+}
+
+.contact h2{
+  font-size: 2.8em;
+}
+
+.contact p{
+  text-align: center;
+  margin: auto;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.contact .row{
+  display: flex;
+  margin-top: 2rem;
+  background-color: #fefefe;
+  flex-wrap: wrap;
+}
+
+.contact .row .map{
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row .alamat{
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align:center;
+  justify-content: center;
+}
+
+
+
+/* Footer */
+footer{
+  position: bottom;
+  bottom: 0;
+}
+
+.footer-distributed{
+  background-color: #000000;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left , .footer-distributed .footer-center , .footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+  width: 30%;
+}
+
+.footer-distributed h3{
+  color: #ffff;
+  font: normal 44px 'cookie';
+  margin: 0;
+}
+
+.footer-distributed .footer-links{
+  color: #ffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+  display: inline-block;
+  line-height: 1.8;
+  font-size: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color: #d7d7d7;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color: #ffff;
+  color: #33383b;
+  font-size: 17px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-shop{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffff;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p a{
+  color: #ffff;
+  text-decoration:underline;
+}
+
+.footer-distributed .footer-right{
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color: #d7d7d7;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  padding-top: 7px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover{
+ transform: scale(1.1);
+}
+
+.footer-links a::after{
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.25rem solid #fff;
+  transform: scaleX(0);
+  transition: 0.1s linear;
+}
+
+.footer-links a:hover::after{
+  transform: scaleX(0.5);
+}
+
+
+/* WhatsApp Button */
+.wa_btn{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  background-color: #dedddd;
+  padding: 10px 20px;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.wa_btn i{
+  font-size: 30px;
+  padding: 10px 10px;
+  background-color: #25D366;
+  border-radius: 50%;
+  height: 24px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 135px;
+  color: #fff;
+}
+
+.wa_btn span {
+  margin-left: 18px; /* Menambahkan margin kiri agar teks berada di sebelah kanan ikon */
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media(max-width: 1366px) {
+  html{
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media(max-width: 768px) {
+  html{
+    font-size: 62.5%;
+  }
+
+  .navbar .navbar-logo {
+    padding: 0;
+    margin-right: 0;
+    font-size: 17px;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 32vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #010101;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.3);
+  }
+
+  .search-bar .fas {
+    font-size: 15px;
+  }
+
+  .search-bar input {
+    font-size: 12.7px;
+    margin-right: 20px;
+  }
+
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about .row{
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img{
+    height: 18rem;
+    width: 100%;
+  }
+
+  .about .row .content{
+    padding: 0;
+  }
+
+  .about .row .content h3{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .contact .row {
+    flex-direction: column;
+  }
+
+  .contact .row .map,
+  .contact .row .alamat {
+    flex: 1 1 100%;
+    padding: 1rem;
+  }
+
+  footer{
+    position: static;
+  }
+
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+}
+
+/* Mobile Phone */
+@media(max-width: 480px) {
+  html{
+    font-size: 60%;
+  }
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+  .contact h2 {
+    font-size: 2em;
+  }
+
+  .contact p {
+    font-size: 1rem;
+  }
+
+  .contact .row .alamat {
+    padding: 2rem 1rem;
+  }
+  .wa_btn{
+    background-color: transparent;
+  }
+  .wa_btn span{
+    display: none;
+  }
+  .wa_btn i{
+    right: 0;
+  }
+}
