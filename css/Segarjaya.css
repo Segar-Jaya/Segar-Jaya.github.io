@@ -142,7 +142,7 @@ body{
 
 .heading{
   text-align:left;
-  padding: 90px 50px 0 50px;
+  padding: 90px 50px 20px 50px;
 }
 
 .heading h2{
@@ -168,7 +168,7 @@ body{
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 1.9rem;
   margin-top: 2rem;
-  margin: 60px;
+  margin: 30px;
 }
 
 .products-container .box{
