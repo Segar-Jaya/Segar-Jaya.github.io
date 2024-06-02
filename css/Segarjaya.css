@@ -99,6 +99,7 @@ body{
 .search-bar input {
   padding: 5px 10px;
   font-size: 16px;
+  width: 110px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -518,7 +519,7 @@ footer{
   .navbar .navbar-logo {
     padding: 0;
     margin-right: 0;
-    font-size: 17px;
+    font-size: 19px;
   }
 
   #hamburger-menu {
@@ -560,7 +561,7 @@ footer{
   }
 
   .search-bar input {
-    font-size: 12.7px;
+    font-size: 15px;
     margin-right: 20px;
   }
 
