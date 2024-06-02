@@ -48,7 +48,7 @@ body{
 
 .navbar-left .back-button {
   font-size: 24px;
-  margin-right: 20px;
+  margin-right: 14px;
   color: var(--text-color);
 }
 
@@ -81,10 +81,6 @@ body{
   transform: scaleX(1);
 }
 
-.navbar .navbar-extra a {
-  color: var(--text-color);
-  margin: 0 0.5rem;
-}
 
 .search-bar {
   display: flex;
@@ -99,7 +95,7 @@ body{
 .search-bar input {
   padding: 5px 10px;
   font-size: 16px;
-  width: 110px;
+  width: 100px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -215,7 +211,7 @@ body{
 
 .selengkapnya{
   position: absolute;
-  right: 60px;
+  right: 30px;
   background-color: white;
   border-radius: 10px;
   padding: 10px 20px;
