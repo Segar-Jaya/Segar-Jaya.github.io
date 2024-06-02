@@ -617,18 +617,19 @@ footer{
     font-size: 60%;
   }
   .products-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .contact h2 {
     font-size: 2em;
   }
 
   .contact p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .contact .row .alamat {
     padding: 2rem 1rem;
+    font-size: 1.3rem;
   }
   .wa_btn{
     background-color: transparent;
@@ -638,5 +639,8 @@ footer{
   }
   .wa_btn i{
     right: 0;
+    font-size: 40px;
+    height: 32px;
+    width: 34px;
   }
 }
