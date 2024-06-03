@@ -48,15 +48,19 @@ body{
 
 .navbar-left .back-button {
   font-size: 24px;
-  margin-right: 14px;
+  margin-right: 20px;
   color: var(--text-color);
 }
 
 .navbar .navbar-logo {
-  font-size: 25px;
-  font-weight: 700;
   color: var(--text-color);
   padding-left: 30px;
+}
+
+.navbar-logo img {
+  width: 60px;
+  height: auto; 
+  margin: -7px;
 }
 
 .navbar .navbar-nav a {
@@ -64,7 +68,7 @@ body{
   display: inline-block;
   font-size: 18px;
   font-weight: 550;
-  margin: 0 1rem;
+  margin: 0 1.8rem;
   margin-right: 5px;
 }
 
@@ -81,6 +85,10 @@ body{
   transform: scaleX(1);
 }
 
+.navbar .navbar-extra a {
+  color: var(--text-color);
+  margin: 0 0.5rem;
+}
 
 .search-bar {
   display: flex;
@@ -95,7 +103,7 @@ body{
 .search-bar input {
   padding: 5px 10px;
   font-size: 16px;
-  width: 100px;
+  width: 300px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -139,7 +147,7 @@ body{
 
 .heading{
   text-align:left;
-  padding: 90px 50px 20px 50px;
+  padding: 90px 30px 20px 30px;
 }
 
 .heading h2{
@@ -234,7 +242,7 @@ body{
 
 /* About Section */
 .about{
-  padding: 90px 50px 0 50px;
+  padding: 90px 30px 0 30px;
 }
 
 .about h2{
@@ -281,7 +289,7 @@ body{
 /* Contact Section */
 .contact{
   text-align:left;
-  padding: 90px 50px 0 50px;
+  padding: 90px 30px 0 30px;
 }
 
 .contact h2{
@@ -298,7 +306,7 @@ body{
 
 .contact .row{
   display: flex;
-  margin-top: 2rem;
+  margin-top: 5rem;
   background-color: #fefefe;
   flex-wrap: wrap;
 }
@@ -329,8 +337,8 @@ footer{
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: bold 16px sans-serif;
-  padding: 50px 50px 60px 50px;
+  font: bold 16px "Be Vietnam Pro";
+  padding: 30px 30px 30px 30px;
   margin-top: 80px;
 }
 
@@ -528,7 +536,7 @@ footer{
     right: -100%;
     background-color: #fff;
     width: 30rem;
-    height: 32vh;
+    height: auto;
     transition: 0.3s;
   }
 
@@ -559,6 +567,12 @@ footer{
   .search-bar input {
     font-size: 15px;
     margin-right: 20px;
+    width: 120px;
+  }
+
+  .hero{
+    min-height: 70vh;
+    margin-top: 80px;
   }
 
   .products-container {
@@ -612,7 +626,11 @@ footer{
 /* Mobile Phone */
 @media(max-width: 480px) {
   html{
-    font-size: 60%;
+    font-size: 70%;
+  }
+  .navbar-logo img {
+    width: 50px;
+    margin: -10px 5px -10px 0;
   }
   .products-container {
     grid-template-columns: 1fr 1fr;
@@ -645,3 +663,4 @@ footer{
     width: 34px;
   }
 }
+
